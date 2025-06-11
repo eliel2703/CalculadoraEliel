@@ -1,17 +1,79 @@
 body {
-    background-color: #f8f9fa;
+    background-color: #f0f0f0;
+    background-image: url('https://wallpapercave.com/wp/wp2043150.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    min-height: 100vh;
 }
 
 .card {
-    border-radius: 10px;
+    border-radius: 15px;
+    border: 3px solid #000;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-header {
+    background: linear-gradient(to right, #000, #ffffff);
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+    border-bottom: 3px solid #000;
+}
+
+.card-footer {
+    background: linear-gradient(to right, #ffffff, #000);
+    color: white;
+    font-weight: bold;
+    border-top: 3px solid #000;
 }
 
 #visor {
-    font-size: 1.5rem;
-    height: 50px;
+    font-size: 1.8rem;
+    height: 70px;
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    font-weight: bold;
+    text-align: right;
 }
 
 .btn {
-    font-size: 1.1rem;
-    padding: 8px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 12px 0;
+    border: 2px solid #000 !important;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-light {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-warning {
+    background-color: #ED1C2E;
+    color: white;
+}
+
+.btn-success {
+    background-color: #000;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #333;
+    color: white;
+}
+
+.corinthians-logo {
+    width: 40px;
+    margin-right: 10px;
 }

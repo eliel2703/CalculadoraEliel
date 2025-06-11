@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Eliel</title>
+    <title>Calculadora do Timão - Prof. Fernandão</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card shadow">
-                    <div class="card-header bg-primary text-white">
-                        <h2 class="text-center mb-0">Calculadora Eliel</h2>
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-lg">
+                    <div class="card-header">
+                        <h2 class="text-center mb-0">
+                            <img src="https://logodownload.org/wp-content/uploads/2016/11/Corinthians-logo-escudo-1.png" alt="Corinthians" class="corinthians-logo">
+                            Calculadora do Timão
+                        </h2>
+                        <p class="text-center mb-0">Prof. Fernandão</p>
                     </div>
                     <div class="card-body">
                         <input type="text" id="visor" class="form-control mb-3 text-end" readonly>
@@ -44,7 +48,7 @@
                                 <button class="btn btn-light w-100" onclick="inserir('9')">9</button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-warning w-100" onclick="inserir('/')">÷</button>
+                                <button class="btn btn-danger w-100" onclick="inserir('/')">÷</button>
                             </div>
                         </div>
                         
@@ -59,7 +63,7 @@
                                 <button class="btn btn-light w-100" onclick="inserir('6')">6</button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-warning w-100" onclick="inserir('*')">×</button>
+                                <button class="btn btn-danger w-100" onclick="inserir('*')">×</button>
                             </div>
                         </div>
                         
@@ -74,7 +78,7 @@
                                 <button class="btn btn-light w-100" onclick="inserir('3')">3</button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-warning w-100" onclick="inserir('-')">-</button>
+                                <button class="btn btn-danger w-100" onclick="inserir('-')">-</button>
                             </div>
                         </div>
                         
@@ -86,12 +90,15 @@
                                 <button class="btn btn-light w-100" onclick="inserir('.')">.</button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-success w-100" onclick="calcular()">=</button>
+                                <button class="btn btn-secondary w-100" onclick="calcular()">=</button>
                             </div>
                             <div class="col-3">
-                                <button class="btn btn-warning w-100" onclick="inserir('+')">+</button>
+                                <button class="btn btn-danger w-100" onclick="inserir('+')">+</button>
                             </div>
                         </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <p class="mb-0">Vai Curintia</p>
                     </div>
                 </div>
             </div>

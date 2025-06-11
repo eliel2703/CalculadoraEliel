@@ -14,7 +14,7 @@ function apagar() {
 
 function calcular() {
     try {
-        let expressao = visor.value.replace(/x/g, '*').replace(/÷/g, '/');
+        let expressao = visor.value.replace(/×/g, '*').replace(/÷/g, '/');
         
         if (contarParenteses(expressao)) {
             visor.value = 'Erro: Parênteses';
@@ -56,5 +56,7 @@ document.addEventListener('keydown', function(event) {
         limpar();
     } else if (tecla === ',') {
         inserir('.');
+    } else if (tecla === 'x' || tecla === 'X') {
+        inserir('*');
     }
 });
